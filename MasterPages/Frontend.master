@@ -1,0 +1,34 @@
+﻿<%@ Master Language="VB" CodeFile="Frontend.master.vb" Inherits="MasterPages_Frontend" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title></title>
+  <asp:ContentPlaceHolder ID="head" runat="server">
+  </asp:ContentPlaceHolder>
+  <script src="/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+  <form id="form1" runat="server">
+    <div id="PageWrapper">
+      <header><a href="/"></a></header>
+      <nav>
+          <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False">
+          </asp:Menu>
+          <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+        </nav>
+      <section id="MainContent">
+        <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+        </asp:ContentPlaceHolder>
+      </section>
+      <aside id="Sidebar">
+        <br />
+        <asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="True" Visible="False">
+          <asp:ListItem>Monochrome</asp:ListItem>
+          <asp:ListItem>DarkGrey</asp:ListItem>
+        </asp:DropDownList>
+      </aside>
+      <footer>All Rights Reserved, Web Master R.G.T </footer>
+    </div>
+  </form>
+</body>
+</html>

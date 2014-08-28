@@ -1,0 +1,40 @@
+﻿<%@ Master Language="VB" CodeFile="Frontend - Copy.master.vb" Inherits="MasterPages_Frontend" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title></title>
+  <asp:ContentPlaceHolder ID="head" runat="server">
+  </asp:ContentPlaceHolder>
+  <script src="/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+  <form id="form1" runat="server">
+    <div id="PageWrapper">
+      <header><a href="/"></a></header>
+      <nav>
+          <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" DataSourceID="SiteMapDataSource1" StaticEnableDefaultPopOutImage="False">
+              <Items>
+                  <asp:MenuItem NavigateUrl="~/About-Us.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                  <asp:MenuItem NavigateUrl="~/login.aspx" Text="Login" Value="Login"></asp:MenuItem>
+                  <asp:MenuItem NavigateUrl="~/Triangle.aspx" Text="Triangle Exercise" Value="Triangle Exercise"></asp:MenuItem>
+                  <asp:MenuItem NavigateUrl="~/Contact.aspx" Text="Contact Us" Value="Contact Us"></asp:MenuItem>
+              </Items>
+          </asp:Menu>
+          <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        </nav>
+      <section id="MainContent">
+        <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+        </asp:ContentPlaceHolder>
+      </section>
+      <aside id="Sidebar">
+        Select a theme<br />
+        <asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="True">
+          <asp:ListItem>Monochrome</asp:ListItem>
+          <asp:ListItem>DarkGrey</asp:ListItem>
+        </asp:DropDownList>
+      </aside>
+      <footer>All Rights Reserved, Web Master R.G.T </footer>
+    </div>
+  </form>
+</body>
+</html>
