@@ -23,6 +23,15 @@
             <asp:BoundField DataField="email" HeaderText="email" SortExpression="email" />
             <asp:BoundField DataField="school" HeaderText="school" SortExpression="school" />
         </Columns>
+        <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
     </asp:GridView>
 </p>
 <p>
@@ -30,6 +39,15 @@
         <DeleteParameters>
             <asp:Parameter Name="original_Id" Type="Int32" />
         </DeleteParameters>
+        <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
         <InsertParameters>
             <asp:Parameter Name="Id" Type="Int32" />
             <asp:Parameter Name="firstName" Type="String" />
@@ -37,9 +55,27 @@
             <asp:Parameter Name="email" Type="String" />
             <asp:Parameter Name="school" Type="String" />
         </InsertParameters>
+        <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
         <SelectParameters>
             <asp:ControlParameter ControlID="DropDownList1" Name="school" PropertyName="SelectedValue" Type="String" />
         </SelectParameters>
+        <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
         <UpdateParameters>
             <asp:Parameter Name="firstName" Type="String" />
             <asp:Parameter Name="lastName" Type="String" />
@@ -47,9 +83,27 @@
             <asp:Parameter Name="school" Type="String" />
             <asp:Parameter Name="original_Id" Type="Int32" />
         </UpdateParameters>
+        <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
     </asp:SqlDataSource>
 </p>
 <p>
     &nbsp;</p>
 </asp:Content>
+<!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
 
