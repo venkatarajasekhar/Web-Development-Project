@@ -7,7 +7,13 @@
 </style>
 <script type="text/javascript">
     function validatePhoneNumbers(source, args) {
-        var phoneHome = document.getElementById('<%= PhoneHome.ClientID %>');
+        try{
+          var phoneHome;
+        }catch (Exception e){
+           Trace.Warn("UserAction", "processing 9/a", e);
+         }
+         phoneHome = document.getElementById('<%= PhoneHome.ClientID %>');
+                                                
 
       if (phoneHome.value != '') {
           args.IsValid = true;
