@@ -9,6 +9,15 @@
       width: 100%;
     }
   </style>
+  <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
 </head>
 <body>
   <form id="form1" runat="server">
@@ -18,9 +27,27 @@
         <td>
           <asp:Label ID="Label1" runat="server" Text="Label" EnableViewState="False"></asp:Label>
         </td>
+        <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
         <td>
           <asp:Button ID="SetDate" runat="server" Text="Set Date" />
         </td>
+        <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
       </tr>
       <tr>
         <td>
@@ -35,18 +62,90 @@
             <WeekendDayStyle BackColor="#FFFFCC" />
           </asp:Calendar>
         </td>
+        <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
         <td>
           <asp:Button ID="PlainPostback" runat="server" Text="Plain Postback" />
         </td>
+        <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
       </tr>
       <tr>
         <td>
           <asp:TextBox ID="TextBox1" runat="server" EnableViewState="False"></asp:TextBox>
         </td>
+        <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
         <td>&nbsp;</td>
       </tr>
+        <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
       </table>
+      <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
     </div>
+    <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
   </form>
+  <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
 </body>
+  <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
 </html>
