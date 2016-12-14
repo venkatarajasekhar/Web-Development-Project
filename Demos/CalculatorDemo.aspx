@@ -18,11 +18,28 @@
         <td colspan="3">
           <asp:Label ID="ResultLabel" runat="server"></asp:Label>
         </td>
+              <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
       </tr>
       <tr>
         <td>
           <asp:TextBox ID="ValueBox1" runat="server"></asp:TextBox>
         </td>
+        <error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
         <td>
           <asp:DropDownList ID="OperatorList" runat="server">
             <asp:ListItem>+</asp:ListItem>
