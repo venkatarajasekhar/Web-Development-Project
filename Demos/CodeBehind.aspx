@@ -9,6 +9,16 @@
     <div>
       <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     </div>
+  <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+
   </form>
 </body>
 </html>
