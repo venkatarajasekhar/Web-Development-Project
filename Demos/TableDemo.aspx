@@ -22,6 +22,15 @@
       <tr>
         <td class="auto-style2">Bulleted List</td>
         <td>
+          <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
           <ul>
             <li>Punk</li>
             <li>Rock</li>
@@ -38,13 +47,76 @@
             <li>Trip Hop</li>
           </ol>
         </td>
+        <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
       </tr>
       <tr>
         <td class="auto-style2">Link</td>
         <td><a href="../Default.aspx">Go to the homepage of Planet Wrox</a></td>
+        <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
       </tr>
+        <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
       </table>
+      <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
     </div>
+    <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
   </form>
+  <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
 </body>
+  <!-- error-code related error pages -->
+<error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/ErrorHandler</location>
+</error-page>
 </html>
